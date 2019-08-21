@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表页</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <h2>列表页</h2>
+    {% for book in booklist  %}
+    <li><a href="/detail/{{book.id}}/">{{book.title}}</a></li>
+    {% endfor %}
+
+    <a href="/">返回首页</a>
+</body>
+</html>

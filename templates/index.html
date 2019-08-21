@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+    <h1>hello,这里是 <span>首页</span></h1>
+
+    <h4>
+        {% if username %}
+        你好： <span>{{username}}</span> <a href="/logout/">退出</a>
+        {% else %}
+        <a href="/login/">登录</a> <a href="/regist/">注册</a>
+        {% endif %}
+    </h4>
+
+    <div class="slide">
+        <img src="/static/img/banner1.jpg" alt="">
+    </div>
+
+    <h3><a href="/list/">进入列表页</a></h3>
+</body>
+</html>
