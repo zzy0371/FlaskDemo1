@@ -14,9 +14,20 @@
 <body>
     <div class="container">
         <h2>详情页</h2>
-        {{book.title}}
+
+         <table class="table table-striped table-bordered table-hover" border="" cellspacing="" cellpadding="" width="100%">
+            <tr>
+                <th>书名：{{book.title}}</th>
+            </tr>
+            <tr>
+                <th>作者：ZZY</th>
+            </tr>
+             <tr>
+                <th>售价：0 元</th>
+            </tr>
+        </table>
         <br>
-        <a href="/list/">返回</a>
+        <a href="/list/" class="btn btn-success">返回列表页</a>
     </div>
 
 </body>
